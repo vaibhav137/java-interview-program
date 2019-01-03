@@ -1,0 +1,26 @@
+
+public class Integerpalindrome {
+
+	public static void main(String[] args) {
+		int i;
+		int sum=0;
+		int temp;
+		int n=453;// change according you
+		temp=n;
+      while(n>0)
+      {
+    	i=n%10;
+    	sum=(sum*10)+i;
+    	n=n/10;    	  
+      }
+      if(temp==sum)
+      {
+    	  System.out.println("integer palindrome");
+      }
+      else
+      {
+    	  System.out.println(" not integer palindrome");  
+      }
+	}
+
+}
